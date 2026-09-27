@@ -1,0 +1,69 @@
+* {
+    -fx-font-family: "Segoe UI", "Arial";
+}
+.app-shell { -fx-background-color: #f5f7fb; }
+.sidebar { -fx-background-color: #111827; }
+.brand-mark { -fx-background-color: #6d5dfc; -fx-background-radius: 11; -fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold; -fx-alignment: center; -fx-min-width: 38; -fx-min-height: 38; }
+.brand-name { -fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold; }
+.brand-caption, .section-label { -fx-text-fill: #8390a5; -fx-font-size: 10px; -fx-font-weight: bold; -fx-letter-spacing: 1px; }
+.nav-button { -fx-background-color: transparent; -fx-text-fill: #aeb8c9; -fx-font-size: 13px; -fx-alignment: CENTER_LEFT; -fx-padding: 12 13; -fx-background-radius: 8; -fx-cursor: hand; }
+.nav-button:hover { -fx-background-color: #202b3c; -fx-text-fill: white; }
+.nav-button-active { -fx-background-color: #282548; -fx-text-fill: #b7adff; -fx-font-weight: bold; }
+.sidebar-help { -fx-background-color: #1b2637; -fx-background-radius: 12; -fx-padding: 14; }
+.help-title { -fx-text-fill: #d6d0ff; -fx-font-weight: bold; -fx-font-size: 12px; }
+.help-copy, .sidebar-version { -fx-text-fill: #95a1b5; -fx-font-size: 11px; }
+.main-frame { -fx-background-color: #f5f7fb; }
+.topbar { -fx-background-color: white; -fx-border-color: #e9edf3; -fx-border-width: 0 0 1 0; }
+.login-field, .message-input { -fx-background-color: #f6f7fa; -fx-border-color: #e6e9ef; -fx-border-radius: 7; -fx-background-radius: 7; -fx-padding: 9 11; -fx-font-size: 12px; }
+.button-primary { -fx-background-color: #6658e8; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 11 16; -fx-background-radius: 7; -fx-cursor: hand; }
+.button-primary:hover { -fx-background-color: #5749d2; }
+.button-small { -fx-padding: 9 13; -fx-font-size: 12px; }
+.button-secondary, .button-quiet { -fx-background-color: white; -fx-text-fill: #505b6d; -fx-border-color: #e2e6ed; -fx-border-radius: 7; -fx-background-radius: 7; -fx-padding: 9 13; -fx-cursor: hand; }
+.button-quiet { -fx-border-color: transparent; }
+.online-dot { -fx-text-fill: #22b77a; -fx-font-size: 12px; }
+.session-status { -fx-text-fill: #748093; -fx-font-size: 12px; }
+.avatar { -fx-background-color: #e8e5ff; -fx-background-radius: 50; -fx-text-fill: #6252db; -fx-font-size: 11px; -fx-font-weight: bold; -fx-alignment: center; -fx-min-width: 32; -fx-min-height: 32; }
+.profile-name { -fx-text-fill: #30394a; -fx-font-size: 12px; -fx-font-weight: bold; }
+.content-area { -fx-background-color: #f5f7fb; }
+.page-content { -fx-background-color: #f5f7fb; }
+.page-title { -fx-text-fill: #202a3b; -fx-font-size: 25px; -fx-font-weight: bold; }
+.page-subtitle, .card-subtitle { -fx-text-fill: #8993a3; -fx-font-size: 12px; }
+.metric-row { -fx-fill-height: true; }
+.metric-card, .table-card { -fx-background-color: white; -fx-background-radius: 11; -fx-border-color: #e9edf3; -fx-border-radius: 11; -fx-padding: 18; }
+.metric-card { -fx-pref-width: 250; -fx-min-height: 118; }
+.metric-caption { -fx-text-fill: #8993a3; -fx-font-size: 10px; -fx-font-weight: bold; }
+.metric-value { -fx-text-fill: #252e3f; -fx-font-size: 24px; -fx-font-weight: bold; }
+.metric-positive { -fx-text-fill: #21a878; -fx-font-size: 11px; }
+.metric-note { -fx-text-fill: #929bab; -fx-font-size: 11px; }
+.metric-warning { -fx-text-fill: #e79b38; }
+.card-title { -fx-text-fill: #263144; -fx-font-size: 14px; -fx-font-weight: bold; }
+.product-table { -fx-background-color: transparent; -fx-border-color: transparent; }
+.product-table .column-header-background { -fx-background-color: #f7f8fb; }
+.product-table .column-header { -fx-background-color: #f7f8fb; -fx-padding: 12 8; }
+.product-table .column-header .label { -fx-text-fill: #8993a3; -fx-font-size: 10px; -fx-font-weight: bold; -fx-alignment: CENTER_LEFT; }
+.product-table .table-cell { -fx-border-color: transparent transparent #eef0f4 transparent; -fx-padding: 14 8; -fx-text-fill: #394457; -fx-font-size: 12px; }
+.product-table .table-row-cell { -fx-background-color: white; }
+.product-table .table-row-cell:hover { -fx-background-color: #fafaff; }
+.table-footnote { -fx-text-fill: #a0a8b5; -fx-font-size: 10px; }
+.chat-page { -fx-background-color: white; }
+.chat-sidebar { -fx-background-color: #fbfcfe; -fx-border-color: #e9edf3; -fx-border-width: 0 1 0 0; }
+.workspace-select { -fx-background-color: white; -fx-border-color: #e3e7ee; -fx-border-radius: 7; -fx-background-radius: 7; }
+.conversation-list { -fx-background-color: transparent; -fx-border-color: transparent; }
+.conversation-list .list-cell { -fx-background-color: transparent; -fx-text-fill: #707b8d; -fx-padding: 11 10; -fx-background-radius: 7; -fx-font-size: 12px; }
+.conversation-list .list-cell:selected { -fx-background-color: #eeecff; -fx-text-fill: #5c4fd0; -fx-font-weight: bold; }
+.assistant-card { -fx-background-color: #f0efff; -fx-padding: 11; -fx-background-radius: 9; }
+.assistant-icon { -fx-background-color: #dedaff; -fx-text-fill: #6658e8; -fx-background-radius: 7; -fx-padding: 7; }
+.assistant-name { -fx-text-fill: #423b85; -fx-font-size: 11px; -fx-font-weight: bold; }
+.assistant-caption { -fx-text-fill: #827cae; -fx-font-size: 10px; }
+.chat-main { -fx-background-color: white; }
+.chat-header { -fx-border-color: #eef0f4; -fx-border-width: 0 0 1 0; }
+.message-list { -fx-background-color: white; }
+.message-row-assistant { -fx-alignment: CENTER_LEFT; }
+.message-row-user { -fx-alignment: CENTER_RIGHT; }
+.chat-bubble { -fx-padding: 13 16; -fx-background-radius: 12; -fx-font-size: 12px; -fx-max-width: 560; }
+.chat-bubble-assistant { -fx-background-color: #f3f5f9; -fx-text-fill: #485366; }
+.chat-bubble-user { -fx-background-color: #6658e8; -fx-text-fill: white; }
+.chat-compose { -fx-padding: 15 30 18 30; -fx-border-color: #eef0f4; -fx-border-width: 1 0 0 0; }
+.compose-box { -fx-background-color: #f7f8fa; -fx-border-color: #e6e9ef; -fx-border-radius: 9; -fx-background-radius: 9; -fx-padding: 7; }
+.message-input { -fx-background-color: transparent; -fx-border-color: transparent; }
+.compose-note { -fx-text-fill: #a1a8b4; -fx-font-size: 10px; -fx-alignment: CENTER; }

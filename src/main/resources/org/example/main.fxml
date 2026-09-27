@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainController" styleClass="app-shell">
+    <left>
+        <VBox prefWidth="230" spacing="30" styleClass="sidebar">
+            <padding><Insets top="28" right="18" bottom="24" left="18"/></padding>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="N" styleClass="brand-mark"/>
+                <VBox spacing="1"><Label text="nexa" styleClass="brand-name"/><Label text="INVENTORY OS" styleClass="brand-caption"/></VBox>
+            </HBox>
+            <VBox spacing="8">
+                <Label text="MENÚ PRINCIPAL" styleClass="section-label"/>
+                <Button fx:id="inventoryButton" text="▦   Inventario" onAction="#showInventory" maxWidth="Infinity" styleClass="nav-button"/>
+                <Button fx:id="assistantButton" text="✦   Chatbot IA" onAction="#showAssistant" maxWidth="Infinity" styleClass="nav-button"/>
+            </VBox>
+            <VBox VBox.vgrow="ALWAYS"/>
+            <VBox spacing="12" styleClass="sidebar-help">
+                <Label text="✦  Nexa Intelligence" styleClass="help-title"/>
+                <Label text="Tu operación, más inteligente. Explora insights en tiempo real." wrapText="true" styleClass="help-copy"/>
+                <Label text="Versión de vista previa · 1.0" styleClass="sidebar-version"/>
+            </VBox>
+        </VBox>
+    </left>
+    <center>
+        <BorderPane styleClass="main-frame">
+            <top>
+                <HBox alignment="CENTER_RIGHT" spacing="14" styleClass="topbar">
+                    <padding><Insets top="16" right="32" bottom="16" left="32"/></padding>
+                    <HBox fx:id="loggedOutBox" alignment="CENTER_RIGHT" spacing="8">
+                        <TextField fx:id="usernameField" promptText="Usuario" prefWidth="150" styleClass="login-field"/>
+                        <PasswordField fx:id="passwordField" promptText="Contraseña" prefWidth="150" styleClass="login-field"/>
+                        <Button text="Iniciar sesión" onAction="#login" styleClass="button-primary button-small"/>
+                    </HBox>
+                    <HBox fx:id="loggedInBox" alignment="CENTER_RIGHT" spacing="10" visible="false" managed="false">
+                        <Label text="●" styleClass="online-dot"/>
+                        <Label text="Sesión activa" styleClass="session-status"/>
+                        <Label text="AM" styleClass="avatar"/>
+                        <Label fx:id="profileName" text="Alex Morgan" styleClass="profile-name"/>
+                        <Button text="Cerrar sesión" onAction="#logout" styleClass="button-quiet"/>
+                    </HBox>
+                </HBox>
+            </top>
+            <center><StackPane fx:id="contentArea" styleClass="content-area"/></center>
+        </BorderPane>
+    </center>
+</BorderPane>
